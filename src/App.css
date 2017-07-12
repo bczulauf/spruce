@@ -1,0 +1,84 @@
+.App-header {
+  display: flex;
+  align-items: center;
+  height: 80px;
+  position: fixed;
+  font-size: 18px;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #fff;
+}
+
+.App-header a {
+  text-decoration: none;
+  color: #222;
+}
+
+.App-header-action {
+    font-size: 16px;
+}
+
+.App-logo {
+  display: flex;
+  align-items: center;
+}
+
+.App-logo-image {
+  width: 20px;
+  margin-right: 10px;
+}
+
+.App-container {
+  margin: 0 auto;
+  max-width: 1100px
+}
+
+.App-subheader {
+  display: flex;
+  align-items: center;
+}
+
+.App-left {
+  flex: 0 0 auto;
+}
+
+.App-right {
+  margin-left: auto;
+}
+
+.App-main {
+  margin-top: 140px;
+}
+
+.App-row {
+  display: flex;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+.App-col {
+  flex: 1;
+}
+
+.App-button {
+  height: 48px;
+  padding: 0 40px;
+  border: none;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  border-radius: 24px;
+}
+
+.App-button-primary {
+  background-color: #44d89e;
+  color: #fff;
+}
+
+.App-text-green {
+  color: #44d89e;
+}
+
+.App-text-secondary {
+  color: #999;
+}

@@ -1,0 +1,17 @@
+.Template-items {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.Template-item {
+	width: 340px;
+	margin-right: 40px;
+}
+
+.Template-item:last-child {
+	margin-right: 0;
+}
+
+.Template-image {
+	margin-bottom: 10px;
+}
