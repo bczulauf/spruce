@@ -5,11 +5,16 @@ import './Start.css';
 class StartPage extends Component {
 	render() {
 		return (
-			<div>
-				<h3 className="App-text-green">
+			<div className="App-container App-container-top">
+				<h3>
 					Tell us about your garden.
 				</h3>
-				<StartForm />
+				<div className="App-row App-content-top">
+					<div className="App-col">
+						<StartForm />
+					</div>
+					<div className="App-col"></div>
+				</div>
 			</div>
 		)
 	}

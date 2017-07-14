@@ -7,7 +7,6 @@ import {
 } from 'react-router-dom';
 
 import Header from './components/Header';
-import CustomizePage from './pages/customize/CustomizePage';
 import HomePage from './pages/home/HomePage';
 import ProjectPage from './pages/project/ProjectPage';
 import StartPage from './pages/start/StartPage';
@@ -20,10 +19,9 @@ class App extends Component {
     return (
       <div className="App">
         <Header />
-        <div className="App-container App-main">
+        <div className="App-main">
           <Switch>
             <Route exact path="/" component={HomePage}  />
-            <Route path="/customize" component={CustomizePage} />
             <Route path="/project" component={ProjectPage} />
             <Route path="/start" component={StartPage} />
             <Route path="/theme" component={ThemePage} />

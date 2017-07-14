@@ -1,9 +1,11 @@
-.Home-header {
-    margin-bottom: 80px;
-}
-
 .Home-image {
-    margin-left: 80px;
+    background: #eee;
+    height: 360px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 40px;
 }
 
 .Home-p {

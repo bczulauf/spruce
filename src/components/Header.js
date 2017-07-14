@@ -5,12 +5,14 @@ import logo from './../logo.svg';
 class Header extends Component {
   render() {
     return (
-      <header className="App-header App-container">
-        <Link to="/" className="App-logo">
-          <img src={logo} className="App-logo-image" alt="logo" />
-          <div>gardenspruce</div>
-        </Link>
-        <a href="login.html" className="App-right App-header-action">Login</a>
+      <header className="App-header">
+				<div className="App-container App-header-content">
+					<Link to="/" className="App-logo">
+						<img src={logo} className="App-logo-image" alt="logo" />
+						<div>gardenspruce</div>
+					</Link>
+					<a href="login.html" className="App-right App-header-action">Login</a>
+				</div>
       </header>
     )
   }

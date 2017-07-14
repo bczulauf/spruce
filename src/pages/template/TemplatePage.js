@@ -6,9 +6,9 @@ import './Template.css';
 class TemplatePage extends Component {
 	render() {
 		return (
-			<div>
+			<div className="App-container App-container-top">
 				<h3>Choose a design style to get started.</h3>
-				<div className="Template-items">
+				<div className="Template-items App-content-top">
 					{data.themes.map(theme => <Template key={theme.id} {...theme} />)}
 				</div>
 			</div>

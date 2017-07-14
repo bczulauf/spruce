@@ -7,7 +7,7 @@ class ProjectPage extends Component {
 	render() {
 		const project = projects['highline-veggies'];
 		return (
-			<div>
+			<div className="App-container App-container-top">
 				<div className="App-subheader Project-subheader">
 					<h3 className="App-left">Customize your vegetable garden</h3>
 					<div className="App-right">
@@ -21,7 +21,7 @@ class ProjectPage extends Component {
 						<p>{project.description}</p>
 						<p>Difficulty: {project.difficulty}</p>
 						<p>Time to install: {project.time} day</p>
-						{project.inputs.map(input => <select className="Project-select">{input.options.map(option => <option>{option}</option>)}</select>)}
+						{project.inputs.map(input => <select className="Project-select" key={input.id}>{input.options.map(option => <option key={option.id}>{option.name}</option>)}</select>)}
 						<div className="Project-box">
 							<h6>Plants</h6>
 							<ul className="Project-list">

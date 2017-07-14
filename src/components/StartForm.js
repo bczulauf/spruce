@@ -40,56 +40,45 @@ class StartForm extends Component {
     return (
 			<div>
 				<form onSubmit={this.handleSubmit}>
-					<h5>
-						How big is your space?
-					</h5>
-					<div className="App-row">
-						<label className={this.state.size === 'small' ? 'Start-radio-label Start-radio-label-checked' : 'Start-radio-label'}>
-							Small
-							<input type="radio" className="Start-radio" name="size" checked={this.state.size === 'small'} value="small" onChange={this.handleChange} />
-						</label>
-						<label className={this.state.size === 'medium' ? 'Start-radio-label Start-radio-label-checked' : 'Start-radio-label'}>
-							Medium
-							<input type="radio" className="Start-radio" name="size" checked={this.state.size === 'medium'} value="medium" onChange={this.handleChange} />
-						</label>
-						<label className={this.state.size === 'large' ? 'Start-radio-label Start-radio-label-checked' : 'Start-radio-label'}>
-							Large
-							<input type="radio" className="Start-radio" name="size" checked={this.state.size === 'large'} value="large" onChange={this.handleChange} />
-						</label>
+					<h6>
+						Zip
+					</h6>
+					<div>
+						<input type="text" className="Start-input" placeholder="98115" />
 					</div>
-					<h5>
+					<h6>
 						Any colors you would like to avoid?
-					</h5>
+					</h6>
 					<div className="App-row">
-						<label className={'Start-option-red ' + (this.state.red ? 'Start-radio-label Start-radio-label-checked' : 'Start-radio-label')}>
+						<label className={'Start-option-red ' + (this.state.red ? 'Start-checkbox-label Start-checkbox-label-checked' : 'Start-checkbox-label')}>
 							Red
-							<input type="checkbox" className="Start-radio" name="red" checked={this.state.red} onChange={this.handleChange} />
+							<input type="checkbox" className="Start-checkbox" name="red" checked={this.state.red} onChange={this.handleChange} />
 						</label>
-						<label className={'Start-option-orange ' + (this.state.orange ? 'Start-radio-label Start-radio-label-checked' : 'Start-radio-label')}>
+						<label className={'Start-option-orange ' + (this.state.orange ? 'Start-checkbox-label Start-checkbox-label-checked' : 'Start-checkbox-label')}>
 							Orange
-							<input type="checkbox" className="Start-radio" name="orange" checked={this.state.orange} onChange={this.handleChange} />
+							<input type="checkbox" className="Start-checkbox" name="orange" checked={this.state.orange} onChange={this.handleChange} />
 						</label>
-						<label className={'Start-option-yellow ' + (this.state.yellow ? 'Start-radio-label Start-radio-label-checked' : 'Start-radio-label')}>
+						<label className={'Start-option-yellow ' + (this.state.yellow ? 'Start-checkbox-label Start-checkbox-label-checked' : 'Start-checkbox-label')}>
 							Yellow
-							<input type="checkbox" className="Start-radio" name="yellow" checked={this.state.yellow} onChange={this.handleChange} />
+							<input type="checkbox" className="Start-checkbox" name="yellow" checked={this.state.yellow} onChange={this.handleChange} />
 						</label>
-						<label className={'Start-option-purple ' + (this.state.purple ? 'Start-radio-label Start-radio-label-checked' : 'Start-radio-label')}>
+						<label className={'Start-option-purple ' + (this.state.purple ? 'Start-checkbox-label Start-checkbox-label-checked' : 'Start-checkbox-label')}>
 							Purple
-							<input type="checkbox" className="Start-radio" name="purple" checked={this.state.purple} onChange={this.handleChange} />
+							<input type="checkbox" className="Start-checkbox" name="purple" checked={this.state.purple} onChange={this.handleChange} />
 						</label>
-						<label className={'Start-option-blue ' + (this.state.blue ? 'Start-radio-label Start-radio-label-checked' : 'Start-radio-label')}>
+						<label className={'Start-option-blue ' + (this.state.blue ? 'Start-checkbox-label Start-checkbox-label-checked' : 'Start-checkbox-label')}>
 							Blue
-							<input type="checkbox" className="Start-radio" name="blue" checked={this.state.blue} onChange={this.handleChange} />
+							<input type="checkbox" className="Start-checkbox" name="blue" checked={this.state.blue} onChange={this.handleChange} />
 						</label>
-						<label className={'Start-option-pink ' + (this.state.pink ? 'Start-radio-label Start-radio-label-checked' : 'Start-radio-label')}>
+						<label className={'Start-option-pink ' + (this.state.pink ? 'Start-checkbox-label Start-checkbox-label-checked' : 'Start-checkbox-label')}>
 							Pink
-							<input type="checkbox" className="Start-radio" name="pink" checked={this.state.pink} onChange={this.handleChange} />
+							<input type="checkbox" className="Start-checkbox" name="pink" checked={this.state.pink} onChange={this.handleChange} />
 						</label>
+						<button type="submit" value="Submit" className="App-button App-button-primary">Next</button>
 					</div>
-					<button type="submit" value="Submit" className="App-button App-button-primary">Next</button>
 				</form>
 				{fireRedirect && (
-					<Redirect to={'/customize'}/>
+					<Redirect to={'/template'}/>
 				)}
 			</div>
     );

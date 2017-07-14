@@ -11,17 +11,17 @@ const projects = {
 				{
 					id: 'size',
 					options: [
-						'Small',
-						'Medium',
-						'Large'
+						{id: 'sizeSmall', name: 'Small'},
+						{id: 'sizeMedium', name: 'Medium'},
+						{id: 'sizeLarge', name: 'Large'}
 					]
 				},
 				{
 					id: 'sun',
 					options: [
-						'Full sun',
-						'Partial sun',
-						'Shade'
+						{id: 'sunFull', name: 'Full sun'},
+						{id: 'sunPartial', name: 'Partial sun'},
+						{id: 'sunShade', name: 'Shade'}
 					]
 				}
 			],
